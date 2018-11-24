@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 import { Questionnaire } from '../components/questionnaire';
+import { UserDetailsForm } from '../components/UserDetailsForm';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -22,3 +23,6 @@ storiesOf('Button', module)
 
   storiesOf('Questionnaire', module)
     .add('Survey', () => <Questionnaire/>)
+
+storiesOf('User Details', module)
+  .add('User Details', () => <UserDetailsForm/>)
