@@ -3,7 +3,11 @@
 }
 
 body {
-  background-image: url('../images/home-bg.png');
+  background: 
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)),
+    url('../images/home-bg.png');
   background-size: cover;
   background-repeat: none;
 }
@@ -17,7 +21,7 @@ body {
 }
 
 .logo-wrapper {
-  margin: 5%;
+  margin: 2%;
 }
 
 button {
@@ -43,9 +47,10 @@ h1 {
   color: whitesmoke;
   font-family: 'Helvetica Neue';
   font-weight: 200;
+  font-size: 1.5rem;
   letter-spacing: 0.5rem;
 }
 
 img {
-  width: 200px;
+  width: 300px;
 }

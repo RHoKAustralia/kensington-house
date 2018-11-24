@@ -2,7 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 import imgurl from '../images/logo/logo.svg'
 
-export default class LandingPage extends React.Component {
+export class LandingPage extends React.Component {
 
   constructor() {
     super()
@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component {
         <div className="button-wrapper">
           <button>IM IN</button>
           <div className="or">
-            <h1>OR</h1>
+            <h1>or</h1>
           </div>
           <button>TELL ME MORE</button>
         </div>
