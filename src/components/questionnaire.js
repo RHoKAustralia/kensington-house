@@ -113,26 +113,6 @@ const configuration = {
         },
         {
           type: "checkbox",
-          name: "volunteeringOpportunities",
-          title: "Which of these Volunteer Opportunities sound interesting to you? (Tick as many as you like)",
-          choices: [
-            "Board of Management (Not For Profits are run by volunteer Boards of Management. Generally meet once a month on a weekday evening)",
-            "Code Club (Nationwide, weekly after-school computer coding clubs for kids aged 9 – 11)",
-            "Drop In Form Help (Assisting people to fill out forms online or on paper, various days and times)",
-            "Family Literacy Program (weekly 1 hour session providing reading and writing support to children aged Prep – Year 4)",
-            "Community Gardens (working bees, day to day garden maintenance, composting etc, flexible days and hours)",
-            "Resume Support (Helping prepare professional resumes for people seeking employment, flexible days and hours)",
-            "Vietnamese Interpreter (Fortnightly, Thursdays 10am – 12pm",
-            "Gentle Exercise Instructor (Fortnightly, Thursdays 10am – 10.30am)",
-            "Bus Driver (collecting and transporting people in a 12 seater mini-van. No special licence required. Various days and times)",
-            "Kitchen Hand (Assists in preparing and serving meals, Wednesdays 11.30am – 1.30pm)",
-            "Homework Club (help children from Prep – Year 10 with their homework, literacy and numeracy. Mondays or Wednesdays 5.30pm – 7.30pm)",
-            "House/garden working bees (one off events at various times of the year)",
-            "Festivals and events (eg. Kensington Community Festival, various dates and times of year) "
-          ]
-        },
-        {
-          type: "checkbox",
           name: "skills",
           title: "Volunteering doesn’t always have to mean a regular weekly commitment. Community organisations frequently need help with one-off tasks that they don’t have the skills, or time, for. Do you have any of these skills? Tick as many as apply.",
           choices: [
