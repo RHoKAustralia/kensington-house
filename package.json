@@ -32,6 +32,7 @@
     "@storybook/addon-viewport": "^4.0.8",
     "@storybook/react": "^4.0.8",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4"
+    "babel-loader": "^8.0.4",
+    "storybook-react-router": "^1.0.1"
   }
 }
