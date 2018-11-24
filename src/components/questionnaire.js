@@ -112,6 +112,23 @@ const configuration = {
           ]
         },
         {
+          type: "matrixdynamic",
+          visibleIf: "{languages} = [\"Other (specify)\"]",
+          name: "otherLanguages",
+          title: "What other languages do you speak?",
+          columns: [
+           {
+            name: "language",
+            title: "Language",
+            cellType: "text"
+           }
+          ],
+          cellType: "text",
+          rowCount: 1,
+          addRowText: "Add Language",
+          removeRowText: "Remove"
+        },
+        {
           type: "checkbox",
           name: "skills",
           title: "Volunteering doesn’t always have to mean a regular weekly commitment. Community organisations frequently need help with one-off tasks that they don’t have the skills, or time, for. Do you have any of these skills? Tick as many as apply.",
@@ -128,6 +145,23 @@ const configuration = {
             "Proof Reading/Editing",
             "Other (what are you great at? Don’t be shy!)"
           ]
+        },
+        {
+          type: "matrixdynamic",
+          visibleIf: "{skills} = [\"Other (what are you great at? Don’t be shy!)\"]",
+          name: "otherSkills",
+          title: "You chose \"Other\". What other skills do you have?",
+          columns: [
+           {
+            name: "skill",
+            title: "Skill",
+            cellType: "text"
+           }
+          ],
+          cellType: "text",
+          rowCount: 1,
+          addRowText: "Add Skill",
+          removeRowText: "Remove"
         },
         {
           type: "checkbox",
