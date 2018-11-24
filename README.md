@@ -1,3 +1,70 @@
+# Kensington Neighbourhood House - Project 'volunteer3031'
+
+Initial build for Random Hacks of Kindness November 2018.
+
+## Overview
+
+A system to allow volunteers to be matched with roles available in the Kensington local area.
+Kensington Neighbourhood house are the 'hub' of the local cluster of organisations, many of 
+whom have varying types of volunteer roles available.
+
+## MVP Screen Flow : 
+
+--> __Landing Page__ 
+
+--> __Login Page__ 
+
+--> __Questionnaire page__ 
+
+--> __Thankyou page__
+
+## Landing Page
+
+* Initially, single image with a button which goes to the login page
+
+
+## Login Page
+
+* A nicely branded standard 'userid' and 'password' page with two buttons:
+
+  * Login (which goes to the questionnaire page)
+  * Cancel (which goes back to the landing page)
+
+## Questionnaire Page
+
+Basic Details
+- First Name, Surname
+- Address
+- Email
+- Mobile
+
+I would prefer to volunteer:
+- Once a week
+- Once a month
+- For one-off events
+
+I am available: (some sort of grid for people to nominate availability)
+- Week days only
+- Weekends
+- Week nights only
+
+I have a (tick as many as apply):
+- Current Working With Children Check
+- Current VIT Registration
+- Current Vic Police Check
+- Current Drivers Licence (Full)
+
+In addition to English, I speak:
+- Cantonese
+- Mandarin
+- Arabic
+- Somali
+- Vietnamese
+- Farsi
+- Other (specify)
+
+# Development Environment
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
