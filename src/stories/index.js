@@ -6,7 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 import { Questionnaire } from '../components/questionnaire';
-import { LandingPage } from '../pages/landing-page'
+import { LandingPage } from '../pages/landing-page';
+import StoryRouter from 'storybook-react-router';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -30,4 +31,5 @@ storiesOf('Questionnaire', module)
     .add('Survey', () => <Questionnaire onComplete={onCompleteAction}/>)
 
 storiesOf('Landing Page', module)
-    .add('Landing Page', () => <LandingPage/>)
+  .addDecorator(StoryRouter())
+  .add('Landing Page', () => <LandingPage/>)

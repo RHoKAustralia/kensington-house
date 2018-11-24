@@ -11,17 +11,22 @@ const configuration = {
           type: "text",
           name: "firstName",
           title: "First Name:",
-          requiredErrorText: "Please provide a first name."
+          isRequired: true,
+          requiredErrorText: "Please provide a first name"
         },
         {
           type: "text",
           name: "lastName",
-          title: "Last Name: "
+          title: "Last Name: ",
+          isRequired: true,
+          requiredErrorText: "Please provide a last name"
         },
         {
           type: "text",
           name: "email",
           title: "Email:",
+          isRequired: true,
+          requiredErrorText: "Please provide an email address",
           validators: [
             {
               type: "email"
@@ -33,7 +38,9 @@ const configuration = {
           type: "text",
           name: "phoneNumber",
           title: "Phone Number:",
-          valueName: "phone number"
+          valueName: "phone number",
+          isRequired: true,
+          requiredErrorText: "Please provide a phone number"
         }
       ]
     },
@@ -94,7 +101,8 @@ const configuration = {
             "Current Working With Children Check",
             "Current VIT Registration",
             "Current Vic Police Check",
-            "Current Drivers Licence (Full)"
+            "Current Drivers Licence (Full)",
+            "None"
           ]
         },
         {
