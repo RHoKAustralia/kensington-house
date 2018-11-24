@@ -40,7 +40,14 @@ const configuration = {
           title: "Phone Number:",
           valueName: "phone number",
           isRequired: true,
-          requiredErrorText: "Please provide a phone number"
+          requiredErrorText: "Please provide a phone number",
+          validators: [
+            {
+              type: "regex",
+              text: "Please provide a valid phone number",
+              regex: "^\\({0,1}((0|\\+61)(2|4|3|7|8)){0,1}\\){0,1}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{2}(\\ |-){0,1}[0-9]{1}(\\ |-){0,1}[0-9]{3}$"
+            }
+          ]
         }
       ]
     },
@@ -62,35 +69,25 @@ const configuration = {
           name: "volunteerPeriods",
           title: "I would prefer to volunteer",
           columns: [
-           {
-            name: "TimeOfDay",
-            title: "Time Of Day"
-           }
+            {
+              name: "TimeOfDay",
+              title: "Time Of Day"
+            }
           ],
           choices: [
-           "AM",
-           "PM",
-           "Evenings"
+            "AM",
+            "PM",
+            "Evenings"
           ],
           cellType: "checkbox",
           rows: [
-           "Monday",
-           "Tuesday",
-           "Wednesday",
-           "Thursday",
-           "Friday",
-           "Saturday",
-           "Sunday"
-          ]
-        },
-        {
-          type: "dropdown",
-          name: "availability",
-          title: "I am available",
-          choices: [
-            "Week days only",
-            "Weekends",
-            "Week nights only"
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
           ]
         },
         {
@@ -121,15 +118,15 @@ const configuration = {
         },
         {
           type: "matrixdynamic",
-          visibleIf: "{languages} = [\"Other (specify)\"]",
           name: "otherLanguages",
+          visibleIf: "{languages} = [\"Other (specify)\"]",
           title: "What other languages do you speak?",
           columns: [
-           {
-            name: "language",
-            title: "Language",
-            cellType: "text"
-           }
+            {
+              name: "language",
+              title: "Language",
+              cellType: "text"
+            }
           ],
           cellType: "text",
           rowCount: 1,
@@ -156,15 +153,15 @@ const configuration = {
         },
         {
           type: "matrixdynamic",
-          visibleIf: "{skills} = [\"Other (what are you great at? Don’t be shy!)\"]",
           name: "otherSkills",
+          visibleIf: "{skills} = [\"Other (what are you great at? Don’t be shy!)\"]",
           title: "You chose \"Other\". What other skills do you have?",
           columns: [
-           {
-            name: "skill",
-            title: "Skill",
-            cellType: "text"
-           }
+            {
+              name: "skill",
+              title: "Skill",
+              cellType: "text"
+            }
           ],
           cellType: "text",
           rowCount: 1,
