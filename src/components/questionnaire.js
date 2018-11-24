@@ -51,6 +51,32 @@ const configuration = {
           ]
         },
         {
+          type: "matrixdropdown",
+          name: "volunteerPeriods",
+          title: "I would prefer to volunteer",
+          columns: [
+           {
+            name: "TimeOfDay",
+            title: "Time Of Day"
+           }
+          ],
+          choices: [
+           "AM",
+           "PM",
+           "Evenings"
+          ],
+          cellType: "checkbox",
+          rows: [
+           "Monday",
+           "Tuesday",
+           "Wednesday",
+           "Thursday",
+           "Friday",
+           "Saturday",
+           "Sunday"
+          ]
+        },
+        {
           type: "dropdown",
           name: "availability",
           title: "I am available",
