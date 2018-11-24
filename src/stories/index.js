@@ -21,4 +21,4 @@ storiesOf('Button', module)
   ));
 
   storiesOf('Questionnaire', module)
-    .add('Survey', () => <Questionnaire/>)
+    .add('Survey', () => <Questionnaire onComplete={action('formsubmitted')}/>)
