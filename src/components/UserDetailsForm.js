@@ -1,5 +1,6 @@
 import React from "react";
 import * as Survey from "survey-react";
+import '../styles/survey.css'
 
 const configuration = {
   pages: [
