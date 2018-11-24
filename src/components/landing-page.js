@@ -1,5 +1,5 @@
 import React from 'react'
-import './LandingPage.css'
+import './landing-page.css'
 import imgurl from '../images/logo/logo.svg'
 
 export class LandingPage extends React.Component {

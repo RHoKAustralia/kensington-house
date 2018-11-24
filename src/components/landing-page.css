@@ -43,6 +43,12 @@ button:hover {
   background-color: rgba(245, 245, 245, 0.3);
 }
 
+button:focus {
+  transition: all ease-in-out 0.3s;
+  outline: none;
+  background: rgba(245,245,245, 0.5)
+}
+
 h1 {
   color: whitesmoke;
   font-family: 'Helvetica Neue';

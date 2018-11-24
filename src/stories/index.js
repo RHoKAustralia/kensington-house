@@ -6,8 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 import { Questionnaire } from '../components/questionnaire';
-import { UserDetailsForm } from '../components/UserDetailsForm';
-import { LandingPage } from '../components/LandingPage'
+import { UserDetailsForm } from '../components/user-details-form';
+import { LandingPage } from '../components/landing-page'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
