@@ -65,7 +65,8 @@ const configuration = {
             "Current Working With Children Check",
             "Current VIT Registration",
             "Current Vic Police Check",
-            "Current Drivers Licence (Full)"
+            "Current Drivers Licence (Full)",
+            "None"
           ]
         },
         {
