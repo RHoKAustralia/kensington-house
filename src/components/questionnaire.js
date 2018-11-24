@@ -1,11 +1,44 @@
 import React from 'react'
 import * as Survey from 'survey-react'
+import '../styles/survey.css'
 
 const configuration = {
-
   pages: [
     {
       name: "page1",
+      elements: [
+        {
+          type: "text",
+          name: "firstName",
+          title: "First Name:",
+          requiredErrorText: "Please provide a first name."
+        },
+        {
+          type: "text",
+          name: "lastName",
+          title: "Last Name: "
+        },
+        {
+          type: "text",
+          name: "email",
+          title: "Email:",
+          validators: [
+            {
+              type: "email"
+            }
+          ],
+          inputType: "email"
+        },
+        {
+          type: "text",
+          name: "phoneNumber",
+          title: "Phone Number:",
+          valueName: "phone number"
+        }
+      ]
+    },
+    {
+      name: "page2",
       elements: [
         {
           type: "dropdown",
