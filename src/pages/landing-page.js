@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './landing-page.css'
-import imgurl from '../images/logo/logo.svg'
 
 export class LandingPage extends React.Component {
     render() {
