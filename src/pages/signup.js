@@ -30,16 +30,17 @@ export class Signup extends React.Component {
         } catch (e) {
             surveyApi.showDataSavingError("Sorry, a problem occurred submitting your form");
         }
+        if (success) {
+            try {
+                const notifyArgs = {
+                    text: `Hey! A new volunteer just registered : ${survey.data.firstName} ${survey.data.lastName}... get onto it!`,
+                    username: "Kensington Bot",
+                    icon_emoji: ":smile:"
+                };
+                await fetch('https://hooks.slack.com/services/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', { method: "POST", mode: "no-cors", body: JSON.stringify(notifyArgs)});
+            } catch (e) {
 
-        try {
-            const notifyArgs = {
-                text: `Hey! A new volunteer just registered : ${survey.data.firstName} ${survey.data.lastName}... get onto it!`,
-                username: "Kensington Bot",
-                icon_emoji: ":smile:"
-            };
-            await fetch('https://hooks.slack.com/services/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', { method: "POST", mode: "no-cors", body: JSON.stringify(notifyArgs)});
-        } catch (e) {
-
+            }
         }
     }
 
