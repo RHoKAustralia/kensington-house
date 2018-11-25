@@ -11,7 +11,7 @@ export class LandingPage extends React.Component {
             <img src={imgurl} alt="" className='logo'/>
           </div>
           <div className="button-wrapper">
-            <Link to="/signup" className="landing-page-link">IM IN</Link>
+            <Link to="/signup" className="landing-page-link">I'M IN</Link>
             <div className="or">
               <h1>or</h1>
             </div>
