@@ -180,9 +180,12 @@ const configuration = {
       ]
     }
   ],
+  completedHtml: "Thank you for signing up!",
+  completeText: "Sign me up!",
   showProgressBar: "top",
-  showCompletedPage: false,
-  showQuestionNumbers: "off"
+  showCompletedPage: true,
+  showQuestionNumbers: "off",
+  surveyShowDataSaving: true
 }
 
 export class Questionnaire extends React.Component {
