@@ -17,7 +17,7 @@ export class Signup extends React.Component {
         const {data} = survey;
         const url = getSubmitUrl(data.email);
         try {
-            await fetch(url, {method: 'post', body: JSON.stringify(data)});
+            await fetch(url, {method: 'post', mode: 'no-cors', body: JSON.stringify(data)});
             surveyApi.showDataSavingSuccess("Your sign-up was successful. Welcome aboard!");
         } catch (e) {
             surveyApi.showDataSavingError("Sorry, a problem occurred submitting your form");
