@@ -62,6 +62,16 @@
     padding-top: 5em;
     padding-bottom: 1em; }
 
+.sv_completed_page + div {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sv_completed_page + div > div > span {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .sv_main {
   background-color: #f4f4f4; }
   .sv_main hr {
