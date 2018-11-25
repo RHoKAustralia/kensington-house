@@ -180,7 +180,7 @@ const configuration = {
       ]
     }
   ],
-  completedHtml: "Thank you for signing up!",
+  completedHtml: "<h1>Thank you for signing up!</h1>",
   completeText: "Sign me up!",
   showProgressBar: "top",
   showCompletedPage: true,
