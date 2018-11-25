@@ -3,11 +3,7 @@
 }
 
 .wrapper {
-  background: 
-    linear-gradient(
-      rgba(0,0,0,0.4),
-      rgba(0,0,0,0.4)),
-    url('../images/home-bg.png');
+  background: url('../images/background.png');
   background-size: cover;
   background-repeat: none;
   height: 100vh;
@@ -17,28 +13,78 @@
   flex-direction: column;
 }
 
+.nav {
+  width: 100%;
+  overflow: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  margin: 0;
+  width: 20%;
+}
+
+.logo h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem; 
+  margin: 0; 
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+}
+
+.links {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.links h3 {
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 0.4rem;
+  letter-spacing: 0.2rem;
+  margin-right: 10px;
+}
+
+.link-btn {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.links-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
 .logo-wrapper {
   margin: 2%;
 }
 
 .landing-page-link {
   cursor: pointer;
-  background: none;
-  border: 2px solid whitesmoke;
+  background: rgb(119, 214, 75);
   border-radius: 2rem;
-  font-size: 1rem;
-  padding: 1rem 3rem;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.5rem;
   color: whitesmoke;
   font-family: 'Helvetica Neue';
-  font-weight: 200;
-  letter-spacing: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
   transition: all ease-in-out 0.3s;
   text-decoration: none;
+  margin: 0.5rem;
 }
 
 .landing-page-link:hover {
   transition: all ease-in-out 0.3s;
-  background-color: rgba(245, 245, 245, 0.3);
+  background: rgb(153, 247, 141);
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .landing-page-link:focus {
@@ -47,21 +93,33 @@
   background: rgba(245,245,245, 0.5)
 }
 
-.or h1 {
-  color: whitesmoke;
-  font-family: 'Helvetica Neue';
-  font-weight: 200;
-  font-size: 1.5rem;
-  letter-spacing: 0.5rem;
-}
-
 .logo {
   width: 300px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h4 {
+  margin: 0;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
