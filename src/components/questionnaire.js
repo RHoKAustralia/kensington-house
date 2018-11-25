@@ -192,7 +192,7 @@ export class Questionnaire extends React.Component {
       conf.data = { ...this.props.initialData };
     }
     return (
-      <Survey.Survey model={conf} onComplete={this.props.onComplete} />
+      <Survey.Survey mode={this.props.isDisplayMode ? "display" : "edit"} model={conf} onComplete={this.props.onComplete} />
     )
   }
 }

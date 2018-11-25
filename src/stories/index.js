@@ -36,6 +36,7 @@ const initialData = {
 storiesOf('Questionnaire', module)
   .add('Survey', () => <Questionnaire onComplete={onCompleteAction} />)
   .add('Survey (with initial data)', () => <Questionnaire initialData={initialData} onComplete={onCompleteAction} />)
+  .add('Survey (display mode)', () => <Questionnaire isDisplayMode initialData={initialData} onComplete={onCompleteAction} />)
 
 storiesOf('Landing Page', module)
   .addDecorator(StoryRouter())
