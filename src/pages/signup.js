@@ -2,33 +2,35 @@ import React from "react";
 import { Questionnaire } from "../components/questionnaire";
 
 function getSubmitUrl(email){
-    return `https://wajj82uic9.execute-api.us-east-2.amazonaws.com/prod/${email}/questionnaire`
+    return `https://wajj82uic9.execute-api.us-east-2.amazonaws.com/prod/users/${email}/questionnaire`
 }
 
 export class Signup extends React.Component {
 
-    constructor(props){
-        super(props)
-        this.state = {isSubmitting: false, submitError: null, isSuccessful: false}
-    }
+    // constructor(props){
+    //     super(props)
+    //     //this.state = {isSubmitting: false, submitError: null, isSuccessful: false}
+    // }
 
     onComplete = async (survey, surveyApi) => {
-        this.state.isSubmitting = true
+        //this.state.isSubmitting = true
+        surveyApi.showDataSaving()
         const {data} = survey
         const url = getSubmitUrl(data.email)
         try {
             await fetch(url, {method: 'post', body: JSON.stringify(data)});
-            this.state.isSubmitting = false
-            this.state.isSuccessful = true
+            surveyApi.showDataSavingSuccess()
+            //this.state.isSubmitting = false
+            //this.state.isSuccessful = true
         } catch (e) {
-            this.state.isSubmitting = false
-            this.state.submitError = 'error'
-
+            //this.state.isSubmitting = false
+            //this.state.submitError = 'error'
+            surveyApi.showDataSavingError()
         }
     }
 
     render() {
-          
+        /*
         if (this.state.isSuccessful) {
             return <p>Success!</p>    
         } else {
@@ -37,7 +39,7 @@ export class Signup extends React.Component {
             {this.state.submitError && <p>Uh-oh! Something went wrong</p>}
             <Questionnaire onComplete={this.onComplete}/>
             </>;
-        }
-        
+        }*/
+        return <Questionnaire onComplete={this.onComplete}/>
     }
 }
