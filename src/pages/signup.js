@@ -7,7 +7,7 @@ async function timeout(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 function getSubmitUrl(email){
-    return `https://1pf9vw9aw3.execute-api.ap-southeast-2.amazonaws.com/prod/users/${email}/questionnaire`
+    return `https://wajj82uic9.execute-api.us-east-2.amazonaws.com/prod/users/${email}/questionnaire`
 }
 
 export class Signup extends React.Component {
