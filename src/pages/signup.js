@@ -33,7 +33,7 @@ export class Signup extends React.Component {
         if (success) {
             try {
                 const notifyArgs = {
-                    text: `Hey! A new volunteer just registered : ${survey.data.firstName} ${survey.data.lastName}... get onto it!`,
+                    text: `Hey! A new volunteer just registered : ${survey.data.firstName} ${survey.data.lastName} (${survey.data.email})... get onto it!`,
                     username: "Kensington Bot",
                     icon_emoji: ":smile:"
                 };
