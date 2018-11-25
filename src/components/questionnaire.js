@@ -38,7 +38,6 @@ const configuration = {
           type: "text",
           name: "phoneNumber",
           title: "Phone Number:",
-          valueName: "phone number",
           isRequired: true,
           requiredErrorText: "Please provide a phone number",
           validators: [
@@ -181,6 +180,7 @@ const configuration = {
       ]
     }
   ],
+  showProgressBar: "top",
   showCompletedPage: false
 }
 
@@ -188,8 +188,12 @@ const configuration = {
 export class Questionnaire extends React.Component {
 
   render() {
+    const conf = {...configuration};
+    if (this.props.initialData) {
+      conf.data = { ...this.props.initialData };
+    }
     return (
-      <Survey.Survey json={configuration} onComplete={this.props.onComplete} />
+      <Survey.Survey json={conf} onComplete={this.props.onComplete} />
     )
   }
 }
