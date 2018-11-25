@@ -2,7 +2,7 @@ import React from "react";
 import { Questionnaire } from "../components/questionnaire";
 
 function getSubmitUrl(email){
-    return `https://wajj82uic9.execute-api.us-east-2.amazonaws.com/prod/users/${email}/questionnaire`
+    return `https://eaodi56ir5.execute-api.us-east-2.amazonaws.com/prod/users/${email}/questionnaire`
 }
 
 export class Signup extends React.Component {
