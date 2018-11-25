@@ -136,7 +136,7 @@ const configuration = {
           type: "checkbox",
           name: "skills",
           title: "Volunteering doesn’t always have to mean a regular weekly commitment. Community organisations frequently need help with one-off tasks that they don’t have the skills, or time, for. Do you have any of these skills? Tick as many as apply.",
-          choices: [
+          choices: [ //TODO: This list is static for now, but it will probably be source from an external api later on
             "Bookkeeping/Accounting/Financial Reporting",
             "Policy writing",
             "Graphic Design",
@@ -181,19 +181,18 @@ const configuration = {
     }
   ],
   showProgressBar: "top",
-  showCompletedPage: false
+  showCompletedPage: false,
+  showQuestionNumbers: "off"
 }
 
-
 export class Questionnaire extends React.Component {
-
   render() {
-    const conf = {...configuration};
+    const conf = new Survey.Model({...configuration});
     if (this.props.initialData) {
       conf.data = { ...this.props.initialData };
     }
     return (
-      <Survey.Survey json={conf} onComplete={this.props.onComplete} />
+      <Survey.Survey model={conf} onComplete={this.props.onComplete} />
     )
   }
 }

@@ -12,8 +12,7 @@ import StoryRouter from 'storybook-react-router';
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello World
-  </Button>)
+  .add('with text', () => <Button onClick={action('clicked')}>Hello World</Button>)
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>
       <span role="img" aria-label="so cool">
@@ -27,9 +26,17 @@ const onCompleteAction = (model, api) => {
   console.log([model, api]);
 }
 
+const initialData = {
+  firstName: "Joe",
+  lastName: "Bloggs",
+  email: "joe@bloggs.id.au",
+  phoneNumber: "0400000000"
+};
+
 storiesOf('Questionnaire', module)
-    .add('Survey', () => <Questionnaire onComplete={onCompleteAction}/>)
+  .add('Survey', () => <Questionnaire onComplete={onCompleteAction} />)
+  .add('Survey (with initial data)', () => <Questionnaire initialData={initialData} onComplete={onCompleteAction} />)
 
 storiesOf('Landing Page', module)
   .addDecorator(StoryRouter())
-  .add('Landing Page', () => <LandingPage/>)
+  .add('Landing Page', () => <LandingPage />)
