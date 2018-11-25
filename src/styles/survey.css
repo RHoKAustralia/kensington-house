@@ -62,12 +62,19 @@
     padding-top: 5em;
     padding-bottom: 1em; }
 
+.sv_completed_page + div {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sv_completed_page + div > div > span {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .sv_main {
-  background: 
-    linear-gradient(
-      rgba(0,0,0,0.4),
-      rgba(0,0,0,0.4)),
-    url('../images/home-bg.png'); }
+  background-color: #f4f4f4;
+  }
   .sv_main hr {
     border-bottom: 1px solid #e7e7e7; }
   .sv_main input[type="button"],
